@@ -15,9 +15,13 @@ const BackgroundPicture = props  => {
 
     
     return (
-        // <div className="apod-bg" >this is {props.info.explanation}</div>
         <div className="apod-bg" style={divStyle} >
-            <div className="box" >{props.info.explanation}</div>
+            <div className="box" >
+                <h1 className="title" > Astronomy Picture of the Day :  </h1>
+                <p className="photoName" >{props.info.title}</p>
+                <p className="explanation" >{props.info.explanation}</p>
+                
+            </div>
         </div>
 
 
